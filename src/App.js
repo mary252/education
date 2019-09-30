@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactAwesomePlayer from 'react-awesome-player'
 import {Checkbox , Radio, TextBox , TextInput } from "./components/Form"
 import "./page.css"
 import './App.css';
