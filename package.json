@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.12.0",
-    "react": "^16.10.1",
-    "react-awesome-player": "^1.0.10",
-    "react-dom": "^16.10.1",
-    "react-scripts": "3.1.2",
-    "redux": "^4.0.4",
-    "video-react": "^0.14.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
-    "@fortawesome/react-fontawesome": "^0.1.4"
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "node-sass": "^4.12.0",
+    "react": "^16.10.1",
+    "react-awesome-player": "^1.0.10",
+    "react-dom": "^16.10.1",
+    "react-plyr": "^2.2.0",
+    "react-scripts": "3.1.2",
+    "react-video-markers": "^1.1.1",
+    "redux": "^4.0.4",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "css-build": "node-sass --omit-source-map-url public/sass/my-bulma.scss public/css/my-bulma.css",

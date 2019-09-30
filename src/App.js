@@ -3,8 +3,10 @@ import ReactAwesomePlayer from 'react-awesome-player'
 import {Checkbox , Radio, TextBox , TextInput } from "./components/Form"
 import "./page.css"
 import './App.css';
-import { thisTypeAnnotation } from '@babel/types';
-
+import VideoPlayer from 'react-video-markers';
+import Plyr from 'react-plyr';
+import "../node_modules/video-react/dist/video-react.css"
+import { Player } from 'video-react';
 class App extends React.Component{
   state={
     lessons:[{
@@ -227,7 +229,9 @@ class App extends React.Component{
     }],
     has_mistakes:false,
     result:0,
-    done:false
+    done:false,
+    isPlaying: false,
+    volume: 0.7
   }
   draw_question_div=()=>{
     return this.state.questions.length>0?
@@ -480,7 +484,10 @@ class App extends React.Component{
   change_lession_color=(color_index,lession_css)=>{
       return color_index>=lession_css.lenth? 0:color_index++
   }
+
+
   render(){
+    const {isPlaying, volume} = this.state
     return (
       <div className="container">
         <div className="header">
@@ -524,9 +531,25 @@ class App extends React.Component{
         </div>
         <div className="columns">
             <div className="column is-9 pad-top-33">
-            <ReactAwesomePlayer
+            {/* <ReactAwesomePlayer
               options={this.state.options}
-            />
+            /> */}
+            {/* <VideoPlayer
+              url="https://download.blender.org/durian/trailer/sintel_trailer-720p.mp4"
+              isPlaying={isPlaying}
+              volume={volume}
+              onPlay={this.handlePlay}
+              onPause={this.handlePause}
+              onVolume={this.handleVolume}
+            
+            /> */}
+            {/* <Plyr
+              type="youtube" // or "vimeo"
+              videoId="CDFN1VatiJA"
+            /> */}
+            <Player>
+      <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </Player>
             </div>
             <div className="column is-3 is-hidden-mobile">
               {this.render_lessions()}
