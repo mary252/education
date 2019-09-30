@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Changa|El+Messiri&display=swap');
+
+a,h1,p{
+  font-family: 'Changa', sans-serif;
+}
+.column,
+.columns,
+.is-flex{
+  direction: rtl;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+button :hover{
+  cursor: pointer;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+body{
+  background-color: #fbfbfb;
+}
+.aic { align-items: center; }
+.App-link {
+  color: #09d3ac;
+}
+
+.pad-top-33{
+  padding-top: 33px;
+}
+.is-full-vh {
+  height: 100vh;
+}
+.pad-10-30{
+  padding: 10px 30px;
+}
+
+.border{
+  border: 2px solid #fff;
+}
+
+.mar-bot-20{
+  margin-bottom: 20px
+}
+.mar-left-10{
+  margin-left: 10px;
+}
+.jcc{
+  justify-content: center;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.f-18{
+  font-size: 18px;
+}
